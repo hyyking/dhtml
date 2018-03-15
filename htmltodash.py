@@ -55,7 +55,7 @@ def input(tag, attrs):
 			ident_lvl = ident_lvl + 1
 			return parser.result.write(ident + 'html.' + tag.title() + start + '\n')
 		else:
-			nonclosing(tag, attrs)
+			nonclosing(tag, att)
 
 def output(tag):
 	global ident_lvl
@@ -81,10 +81,8 @@ def output(tag):
 		end = ']),'
 		return parser.result.write(ident + end + '\n')
 
-def nonclosing(tag, attrs):
+def nonclosing(tag, att):
 	global ident_lvl
-	
-	att = dict(attrs)
 	
 	if tag == 'img':
 		ident = ident_text * ident_lvl

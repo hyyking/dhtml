@@ -102,7 +102,7 @@ class Dhtml(object):
 		for line in self.openfile:
 			dparser.feed(line)
 
-
+'''Example of me using the lib'''
 res = Dhtml('htmlsample.html')
 
 res.dparse()

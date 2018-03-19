@@ -1,6 +1,6 @@
 #DHtml library
 # Author = Léo Duret
-# Version = 1.1
+# Version = 0.1
 
 #imports
 from HTMLParser import HTMLParser
